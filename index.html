@@ -3,212 +3,108 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clima</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewsport" content="width=device-width, inicial-scale=1.0">
+    <meta name="author" content="Jesus Elias Garza Rivera">
+    <title>Cafeteria</title>
+    <link rel="shortcut icon" href="assets/img/taza-cafe.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/site-style.css">
+
 </head>
 
 <body>
-    <main class="container">
+    <!--Contenido principal-->
+    <div class="content">
         <header>
-            <h1>Clima en San Nicolas de los Garza</h1>
-            <h2>Semana 02 al 07 de Septiembre de 2024</h2>
-            <h6>Responsable Actualizacion: Jesus Elias</h6>
+            <h1><i class="fa-solid fa-mug-hot"></i>&nbsp;CAFÉ & CHILL</h1>
+            <p>Tu rincón favorito para café, postres y buena compañía</p>
         </header>
+        <nav>
+            <ul>
+                <li><a href="#menu"><i class="fa-solid fa-bars"></i>&nbsp;Menu</a></li>
+                <li><a href="#promos"><i class="fa-solid fa-bowl-food"></i>&nbsp;Promociones</a></li>
+                <li><a href="#nosotros"><i class="fa-solid fa-address-card"></i>&nbsp;Nosotros</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-phone"></i>&nbsp;Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="carrusel">
+            <div class="img-productos">
+                <img src="assets/img/capuchino.jpg" alt="Capuchino">
+                <img src="assets/img/cheesecake.webp" alt="cheesecake">
+                <img src="assets/img/croissant.jpeg" alt="croissant">
+                <img src="assets/img/panini.jpg" alt="panini">
+                <img src="assets/img/te.webp" alt="te">
 
-        <!--Las columnas del dia-->
-        <section class="row text-center mt-5">
-            <div class="col-2 border p-3">
-                <h5>Lunes 02</h5>
-                <h1><i class="fa-solid fa-poo-storm"></i></h1>
-                <p>Nublado</p>
-                <p>31° | 23°</p>
-                <hr>
-                <i class="fa-solid fa-wind"></i>
-                <p>13 - 29 km/h</p>
-
+                <img src="assets/img/capuchino.jpg" alt="Capuchino">
+                <img src="assets/img/cheesecake.webp" alt="cheesecake">
+                <img src="assets/img/croissant.jpeg" alt="croissant">
+                <img src="assets/img/panini.jpg" alt="panini">
+                <img src="assets/img/te.webp" alt="te">
             </div>
-            <div class="col-2 border p-3">
-                <h5>Martes 03</h5>
-                <h1><i class="fa-solid fa-umbrella"></i></h1>
-                <p>Lluvia Ligera</p>
-                <p>29° | 23°</p>
-                <hr>
-                <i class="fa-solid fa-wind"></i>
-                <p>10 - 15 km/h</p>
-
-            </div>
-            <div class="col-2 border p-3">
-                <h5>Miercoles 04</h5>
-                <h1><i class="fa-solid fa-cloud-sun-rain"></i></h1>
-                <p>Soleado y Lluvia</p>
-                <p>29° | 22°</p>
-                <hr>
-                <i class="fa-solid fa-wind"></i>
-                <p>7 - 23 km/h</p>
-
-            </div>
-            <div class="col-2 border p-3">
-                <h5>Jueves 05</h5>
-                <h1><i class="fa-solid fa-hurricane"></i></h1>
-                <p>Huracan</p>
-                <p>29° | 23°</p>
-                <hr>
-                <i class="fa-solid fa-wind"></i>
-                <p>10 - 23 km/h</p>
-
-            </div>
-            <div class="col-2 border p-3">
-                <h5>Viernes 06</h5>
-                <h1><i class="fa-solid fa-cloud-showers-water"></i></h1>
-                <p>Lluvia Fuerte</p>
-                <p>29° | 22°</p>
-                <hr>
-                <i class="fa-solid fa-wind"></i>
-                <p>10 - 27 km/h</p>
-
-            </div>
-            <div class="col-2 border p-3">
-                <h5>Sabado 08</h5>
-                <h1><i class="fa-solid fa-cloud-rain"></i></h1>
-                <p>Chubascos</p>
-                <p>29° | 21°</p>
-                <hr>
-                <i class="fa-solid fa-wind"></i>
-                <p>10 - 24 km/h</p>
-
-            </div>
+        </div>
+        <section>
+            <article id="menu">
+                <h1><i class="fa-solid fa-bars"></i>Nuestro Menu</h1>
+                <ul>
+                    <li>
+                        <strong>Latte Clásico</strong> - $45 <br>
+                        <small>Cafe espresso con leche vaporizada</small>
+                    </li>
+                    <li>
+                        <strong>Cappuccino Vainilla </strong> - $48 <br>
+                        <small>Con un toque dulce y espuma cremosa</small>
+                    </li>
+                    <li>
+                        <strong>Panqué de Plátano </strong> - $35 <br>
+                        <small>Hecho en casa, perfecto para acompañar tu café</small>
+                    </li>
+                    <li>
+                        <strong>Frappe de Mocha </strong> - $55 <br>
+                        <small>Ideal para días calurosos</small>
+                    </li>
+                </ul>
+            </article>
         </section>
-
-        <!--Detalles del clima-->
-        <section class="row mt-5">
-            <div class="col-6">
-                <h5>Proxima Semana</h5>
-                <p>Pronostico de Tiempo (8 al 14 de Septiembre)</p>
-
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Fecha</th>
-                            <th>Max</th>
-                            <th>Min</th>
-                            <th>Estado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>8 de Septiembre</td>
-                            <td>28</td>
-                            <td>18</td>
-                            <td>Parcialmente Nublado</td>
-                        </tr>
-                        <tr>
-                            <td>9 de Septiembre</td>
-                            <td>30</td>
-                            <td>20</td>
-                            <td>Despejado</td>
-                        </tr>
-                        <tr>
-                            <td>10 de Septiembre</td>
-                            <td>27</td>
-                            <td>19</td>
-                            <td>Posibles Lluvias</td>
-                        </tr>
-                        <tr>
-                            <td>11 de Septiembre</td>
-                            <td>25</td>
-                            <td>17</td>
-                            <td>Mayormente Nublado</td>
-                        </tr>
-                        <tr>
-                            <td>12 de Septiembre</td>
-                            <td>26</td>
-                            <td>18</td>
-                            <td>Parcialmente Nublado</td>
-                        </tr>
-                        <tr>
-                            <td>13 de Septiembre</td>
-                            <td>29</td>
-                            <td>19</td>
-                            <td>Despejado</td>
-                        </tr>
-                        <tr>
-                            <td>14 de Septiembre</td>
-                            <td>28</td>
-                            <td>20</td>
-                            <td>Posibles Lluvias</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-6">
-                <div class="row">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="card-body">
-                                <h5>Salida y puesta del sol</h5>
-                                <p>Hoy; Lunes de 02 de Septiembre</p>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="card text-center">
-                                            <div class="card-header text-center">
-                                                <p>Salida</p>
-                                            </div>
-                                            <div class="card-body text-center">
-                                                <h2><i class="fa-solid fa-sun"></i></h2>
-                                                <h3>7:00 a.m.</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="card text-center">
-                                            <div class="card-header">
-                                                <p>Puesto</p>
-                                            </div>
-                                            <div class="card-body text-center">
-                                                <h2><i class="fa-solid fa-moon"></i></h2>
-                                                <h3>6:10 p.m.</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                    <div class="row">
-                                        <div class="card">
-                                            <h3>Informacion UV</h3>
-                                            <p>La radiacion de ultravioleta (UV) es una forma de radiacion no lonizante*
-                                                que es emitida por el sol y fuentes artificiales, como las camas
-                                                bronceadoras. Aunque ofrece algunos beneficios a las personas, como la
-                                                produccion de vitamina D, tambien puede causar riesgos para la salud.
-                                            </p>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="card">
-                                                    <h6>Informacion solo de caracter informativo.</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="alert alert-info" role="alert">
-                    <p>Plantilla elaborada unicamente de: Jesus Elias, Grupo:51</p>
-                </div>
-            </div>
+        <section>
+            <article id="promos">
+                <h1><i class="fa-solid fa-bowl-food"></i>Promociones</h1>
+                <ul>
+                    <li><strong>2x1 en Capuccinos</strong><small>-Todos los martes de 4pm a 6pm.</small></li>
+                    <li><strong>Combo Cafe + Panque</strong><small>-Solo $70.Disponible todo el dia</small></li>
+                </ul>
+            </article>
         </section>
-    </main>
+        <section>
+            <article id="nosotros">
+                <h1><i class="fa-solid fa-address-card"></i>Sobre Nosotros</h1>
+                <ul>
+                    <li><strong>CAFÉ & CHILL</strong> <br> Es una cafetería local con un enfoque en productos
+                        artesanales y
+                        atención personalizada. Nuestra misión es ofrecer más que café: un lugar donde relajarte,
+                        estudiar o tener una buena charla.</li>
+
+                    <li><strong>Recomendación del Barista</strong> <br> Prueba nuestro nuevo<strong> Cold Brew con
+                            Naranja,</strong>
+                        refrescante y con un sabor único.</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <article id="contacto">
+                <h1><i class="fa-solid fa-phone"></i>Contacto</h1>
+                <ul>
+                    <li>Av. Siempre Viva #123, Ciudad Café</li>
+                    <li>(123) 456-7890</li>
+                    <li>contacto@cafechill.com</li>
+                    <li>Síguenos en redes: <u><a href="#Facebook">Facebook</a></u> / <u><a
+                                href="#Instagram">Instagram</a></u> / <u><a href="#TikTok">TikTok</a></u></li>
+                    <li>© 2025 CAFÉ & CHILL - Todos los derechos reservados</li>
+                </ul>
+
+            </article>
+        </section>
+    </div>
+    <!--Fin de contenido principal-->
 </body>
+
 </html>
